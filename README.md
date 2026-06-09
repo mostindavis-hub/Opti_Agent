@@ -17,14 +17,6 @@ Open the published page (see **Deploy** below), then pick one of three ways to g
 ### If live recording can't transcribe
 If on-device transcription is unavailable or fails, the app won't lose your take. It keeps the recording and drops you into **Paste transcript** — carrying over any text it managed to capture — so you can paste a transcript, retry transcription, or download the audio.
 
-## Deploy (GitHub Pages)
-
-1. Create a new repository and add `index.html` to it.
-2. **Settings → Pages → Build and deployment**: Source = **Deploy from a branch**, Branch = **`main` / `/ (root)`**, then **Save**.
-3. After ~1 minute your app is live at `https://<your-username>.github.io/<repo-name>/`.
-
-Serving over `https://` matters: opening the file directly from disk (`file://`) blocks the background worker that loads the transcription model, so live recording won't work that way.
-
 ## Requirements
 
 - A recent **Chrome, Edge, or Safari**. On-device transcription uses WebAssembly/WebGPU via the browser.
